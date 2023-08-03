@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>KAR TICKET BOOKING</title>
+    <style>
+        #center {
+            text-align: center;
+            opacity: 0.6;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(image.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #wrapper {
+            width: 80%;
+            margin: auto;
+            min-width: 940px;
+        }
+        nav a {
+            font-weight: 100;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        form {
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 10px;
+        }
+        label {
+            float: left;
+            clear: left;
+            display: block;
+            width: 100px;
+            padding-right: 10px;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            margin-left: 120px;
+        }
+        input[type="reset"] {
+            margin-left: 120px;
+        }
+        footer {
+            font-size: 90%;
+            text-align: center;
+            clear: right;
+            padding-bottom: 20px;
+        }
+       
+    </style>
+    <nav>
+        <div id="center">
+        <a href="Home.html">Home</a> &nbsp;
+        <a href="Bus Booking.html">Bus Booking</a> &nbsp;
+        <img src="Kar ticket logo.jpg" alt="LOGO PIC" width="150" height="150" />
+        <a href="Contact.html">Contact</a> &nbsp;
+        <a href="Services.html">Services</a>
+        </div>
+    </nav>
+</head>
+<body>
+    <header>
+        <!--<div id="center">
+            <img src="Kar ticket logo.jpg" alt="LOGO PIC" width="150" height="150" />
+        </div>-->
+
+
+    </header>
+    <h1>Contact Us</h1>
+    <!--First Name: <input type="text" name="fname"
+                       id="fname"><br><br>
+    Last Name: <input type="text" name="lname"
+                      id="lname"><br><br>
+    Contact No: <input type="text" name="contact"
+                      id="contact"><br><br>
+    E-mail: <input type="text" name="email" id="email"><br><br>-->
+    <form method="get">
+        <label for="myName">First Name:</label>
+        <input type="text" name="FName" id="FName">
+        <label for="myName">Last Name:</label>
+        <input type="text" name="LName" id="LName">
+        <label for="Contact">Contact No:</label>
+        <input type="text" name="Contact No" id="Contact No">
+        <label for="myEmail">E-mail:</label>
+        <input type="text" name="Email" id="Email">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+
+
+    <footer id="center">
+        <strong>Copyright &copy; 2023 Karthik Manthri</strong>
+    </footer>
+
+</body>
+</html>
