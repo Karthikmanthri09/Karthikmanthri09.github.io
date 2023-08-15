@@ -1,60 +1,196 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>KAR TICKET BOOKING SYSTEM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bus Ticket Booking System</title>
     <style>
-        #center {
-            text-align: center;
-            opacity: 0.6;
-        }
-        #wrapper {
-            width: 80%;
-            margin: auto;
-            min-width: 940px;
-        }
-        nav a {
-            font-family: Arial, sans-serif;
-            font-weight: 100;
-            text-decoration: none;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
         body {
-            background-image: url(image.jpg);
+            font-family: Arial, sans-serif;
+            background-image: url(abc.png);
+            /*background-color:skyblue;*/
+            background-size: auto;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
-        footer {
-            font-size: 90%;
-            text-align: center;
-            clear: right;
-            padding-bottom: 20px;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+            .nav a {
+                text-decoration: none;
+                color: brown;
+            }
+
+                .nav a:hover {
+                    color: greenyellow;
+                }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+        }
+
+            .main h1 {
+                margin-bottom: 10px;
+            }
+
+            .main p {
+                margin-bottom: 20px;
+            }
+
+        body,h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .hero {
+            background-size: cover;
+            background-position: center;
+            color: blueviolet;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+            .hero h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffc107;
+            color: #343a40;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+            .cta-button:hover {
+                background-color: #e0a800;
+            }
+
+       
+        .search {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+
+        .search-container {
+            max-width: 800px;
+            margin: 0 0;
+            text-align: center;
+        }
+
+        .search h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .search-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+            .search-form input[type="text"],
+            .search-form input[type="date"] {
+                padding: 10px;
+                width: 250px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .search-form button {
+                background-color: #ffc107;
+                color: #343a40;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        .center-container {
+            text-align: center;
+        }
+
+        .centered-text {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .footer {
+            color: orangered;
+            padding: 10px;
+            text-align: center;
+        }
+       
+
     </style>
-    <div id="center">
-        <nav>        
-                <a href="Home.html">Home</a> &nbsp;
-                <a href="Bus Booking.html">Bus Booking</a> &nbsp;
-                <img src="Kar ticket logo.jpg" alt="LOGO PIC" width="150" height="150" />
-                <a href="Contact.html">Contact</a> &nbsp;
-                <a href="Services.html">Services</a>
-        </nav>
-        </div>
 </head>
 <body>
-    <p style="color:orangered;">Hello, welcome to my website</p>
+    <div class="container">
 
-    <a href="Bus booking.html"><img src="Bus_available.png" alt="Abcd" width="150" height="150"></a>
-    <br />
-    <br />
-    <br />
-    <footer id="center">
-        <strong>Copyright &copy; 2023 Karthik Manthri</strong>
-    </footer>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="index.html"><img src="Kar ticket logo.jpg" alt="LOGO PIC" width="150" height="150" /></a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="center-container">
+                    <h1 class="centered-text">Find and Book Bus Tickets Online</h1>
+                </div>
+                <p>Discover convenient and affordable bus travel options.</p>
+                <a href="services.html" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="search">
+            <div class="search-container">
+                <h2>Search for Buses</h2>
+                <form class="search-form">
+                    <input type="text" placeholder="Enter Departure City">
+                    <input type="text" placeholder="Enter Destination City">
+                    <input type="date">
+                    <button type="submit">Search Buses</button>
+                </form>
+            </div>
+        </section>
+        <div class="footer">
+            <p><strong>Copyright &copy; 2023 Karthik Manthri</strong></p>
+        </div>
+        </div>
 </body>
 </html>
