@@ -1,0 +1,170 @@
+﻿<html>
+<head>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(abc.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: brown;
+        }
+
+        .nav a:hover {
+             color: darkblue;
+        }
+
+        .container1 {
+
+            color:green;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .service-section{
+            text-align:center;
+            color:red;
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px grey;
+        }
+        service-card {
+            
+            width: 20px;
+            height: 30px;
+            margin: 5px;
+            border: 1px ;
+            box-shadow: 1px 1px 2px grey;
+        }
+        .service-card img {
+            width: 3%;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card p {
+             text-align: center;
+             font-weight: bold;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        
+        .centered-text {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .footer {
+            color: orangered;
+            padding: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="index.html"><img src="Kar ticket logo.jpg" alt="LOGO PIC" width="150" height="150" /></a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+    </header>
+    <main>
+        <div class="center-container">
+            <h2 class="centered-text">Our Services</h2>
+        </div>
+        <section class="services-section">
+            <br />
+            <div style="text-align: center; color:red;">
+                <div class="service-card">
+                    <h3><strong>Easy Booking </strong></h3>
+                    <p><strong>Book bus tickets quickly and conveniently through our user-friendly platform.</strong></p>
+                    <a href="index.html"><img src="services.png" /></a>
+                </div>
+
+                <div class="service-card">
+                    <h3><strong>Wide Coverage </strong></h3>
+                    <p><strong>Enjoy access to a vast network of bus routes covering various destinations.</strong></p>
+                    <a href="index.html"><img src="services2.png" /></a>
+                </div>
+
+                <div class="service-card">
+                    <h3><strong>Secure Payments</strong></h3>
+                    <p><strong>Your payments are secured with the latest encryption technology.</strong></p>
+                    <a href="index.html"><img src="services3.png" /></a>
+                </div>
+            </div>
+            <br />
+        </section>
+    </main>
+    <div class="container1">
+        <div class="card">
+           <a href="index.html"><img src="bus1.jpg" alt="Bus 1"></a>
+            <p>Route A: Hyderabad to Chennai - $15</p>
+        </div>
+        <div class="card">
+            <a href="index.html"><img src="bus2.jpg" alt="Bus 2"></a>
+            <p>Route B: Delhi to Kashmir - $25</p>
+        </div>
+        <div class="card">
+            <a href="index.html"><img src="bus3.jpg" alt="Bus 3"></a>
+            <p>Route C: Mumbai to Kolkata - $20</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p><strong>Copyright &copy; 2023 Karthik Manthri</strong></p>
+    </div>
+</body>
+</html>
